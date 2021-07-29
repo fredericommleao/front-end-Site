@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<script>
+    alert('Essa é uma página fictícia criada unicamente com o propósito de demonstrar meus conhecimentos em desenvolvimento de páginas web. ')
+</script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .menuDrop{
+        margin-left: 320px;
+        width: 1110.7px;
+        margin-right: 5px;
+        height: 40px;
+        background-color: #fff;
+        font-size: 11px;
+        padding-top: 10px;
+       
+
+    }
+
+    .menuDrop ul{
+        list-style: none;
+        margin: 0px; 
+       margin-left: 50px;
+       margin-right: 50px;
+           
+    }
+
+    .menuDrop ul li{
+        width: 150px;
+        float: left;
+        
+    }
+
+    .menuDrop a {
+       
+        margin-right: 60px;
+        display: block;
+        text-decoration: none;
+        text-align: right;
+        background-color: #fff;
+        color: #000;
+    }
+    .menuDrop ul ul {
+        position: absolute;
+        visibility: hidden;
+        padding-right: 10px;
+        padding-left: 30px;
+        margin-left: -70px;   
+        background-color: #fff;
+        
+    }
+    .menuDrop ul li:hover ul{
+        visibility: visible;
+    }
+
+    .menuDrop a:hover{
+        
+        color: rgb(3, 0, 153);
+    }
+    .menuDrop ul ul li{
+        float: none;
+        padding: 10px;
+        
+       
+    }
+    .menuDrop ul ul li a{
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    /*====================================
+    Parametros para responsividade : */
+    
+    label[for="bt_menu"]{
+        padding: 5px;
+        background-color: #222;
+        color: #fff;
+        font-family: 'arial';
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+    
+    #bt_menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display: none;
+    }
+
+    @media(max-width: 800px){
+        label[for="bt_menu"]{
+        display: block;
+    }
+    #bt_menu:checked ~ .menuDrop{
+        margin-left: 0;
+    }
+    .menuDrop{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+       
+       
+        .menuDrop ul li{
+            width: 100%;
+             
+        }
+    .menuDrop ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menuDrop ul li:hover{
+        height: auto;
+        max-height: 200px;
+    }
+} 
+
+
+
+</style>
+<body>
+
+    <!--======================= AREA DO MENU ======================================================-->
+
+    <div style="position: fixed; background-color: #fff;">
+        <div class="container">
+
+            <img src="funape_cor_vertical.png" class="im">
+      </div>
+    
+        <nav class="menuCima">
+            <div>
+                <a  href="Portal do Coordenador.html"><strong>PORTAL DO COORDENADOR |</strong></a>
+                <a  href="Portal de Eventos.html"><strong>PORTAL DE EVENTOS |</strong> </a>
+                <a  href="Portal do Fornecedor.html"><strong>PORTAL DO FORNECEDOR |</strong> </a>
+                <a  href="Portal da Transparência.html"><strong>PORTAL DA TRANSPARÊNCIA</strong></a>
+            </div>
+        </nav>
+    
+        <div >
+            
+            <hr>
+        </div>
+    
+        <nav class="menuDrop">
+            <ul>
+              <li><a class="letrasMenuBaixo" href="Home.html"><strong>HOME</strong></a></li>
+              
+              <li> <a class="letrasMenuBaixo" href="Institucional.html"><strong>INSTITUCIONAL</strong></a>
+              <ul>
+    
+                <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>ADMINISTRACAO</strong></a> </li>
+                <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>CONSELHO</strong></a> </li>
+                <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>DIRETORIA</strong></a> </li>
+                <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>FALE CONOSCO</strong></a> </li>
+      
+              </ul>
+              </li>
+      
+              <li> <a class="letrasMenuBaixo" href="Compliance.html"><strong>COMPLIANCE</strong></a> 
+    
+                <ul>
+                        <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>LEIS E DECRETOS</strong></a> </li>
+                        <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>INSTITUIÇÕES APOIADAS</strong></a> </li>
+                        <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>POLÍTICA DE COMPLIANCE</strong></a> </li>
+                        <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>SISTEMA DE GOVERNANÇA</strong></a> </li>
+    
+                </ul>
+    
+              </li>
+    
+              <li><a class="letrasMenuBaixo" href="Controle de Resultados.html"><strong>CONTROLE DE RESULTADOS</a></li>
+    
+                <li><a class="letrasMenuBaixo" href="Serviços.html"><strong>SERVIÇOS</strong></a>
+    
+                <ul>
+    
+                    <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>DOWNLOADS</strong></a> </li>
+                    <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>CONTRACHEQUES</strong></a> </li>
+                    <li> <a class="letrasMenuBaixo" href="administracao.html"> <strong>ENVIO DE CURRÍCULO</strong></a> </li>
+    
+                </ul>
+            </li>
+    
+                <li><a class="letrasMenuBaixo" href="Perguntas e Respostas.html"><strong>PERGUNTAS E RESPOSTAS</strong></a></li>
+    
+      
+            </ul>
+      
+      
+          </nav>
+    </div>
+
+   
+
+          <!--======================= FIM AREA DO MENU ======================================================-->
+
+          <!--======================= AREA DO SLIDESHOW ======================================================-->
+
+          
+          <div style="width: 100%; height: 150px;"
+          ></div>
+
+
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+             
+              <img src="banner_2021077154519.png" style="width:100%" height="350px">
+           
+            </div>
+    
+            <div class="mySlides fade">
+               
+                <img src="banner_2021078133621.png" style="width:100%" height="350px">
+              
+              </div>
+    
+              <div class="mySlides fade">
+                
+                <img src="banner_20210712113639.png" style="width:100%" height="350px">
+             
+              </div>
+            
+            <div class="mySlides fade">
+             
+              <img src="banner_20210713132727.png" style="width:100%" height="350px">
+            
+            </div>
+            
+            <div class="mySlides fade">
+             
+              <img src="banner_20210722142936.png" style="width:100%" height="350px">
+            
+            </div>
+            
+            </div>
+          
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+
+        <!--=====================FIM AREA DO SLIDESHOW ======================================================-->
+
+        <!--===================== BARRA AZUL ================================================================-->
+
+
+        <div class="barraAzul">
+            <div class="texto">
+                    <a 
+                    class="texto" href="+ MAIS NOTÍCIAS">+ MAIS NOTÍCIAS</a>
+            </div>
+        </div>
+        <div class ="clear"></div>
+
+        <!--================== FIM BARRA AZUL ================================================================-->
+
+        <!--======================= SOBRE A PÁGINA ======================================================-->
+            <div class="sobre_Pagina">
+
+                <div class="ladoImagem">
+                    <span class="sl">BEM VINDO A FUNAPE</span>
+
+                <h1>Fundação de Apoio à Pesquisa</h1>
+                <p>
+                    <div class="classp">
+
+                     <p>A Fundação de Apoio à Pesquisa - FUNAPE, é uma entidade de direito privado,</p><br>
+                     <p>sem fins lucrativos, com autonomia administrativa e financeira,</p> <br>
+                     <p>criada por um grupo de pesquisadores da Universidade Federal de Goiás (UFG)</p> <br>
+                     <p>com o objetivo de apoiar na gestão de projetos de pesquisa, ensino, extensão,</p> <br>
+                     <p>desenvolvimento institucional e inovação tecnológica.</p> 
+
+                    </div>
+
+                    <div class="classp2">
+                        <p>A Fundação no cumprimento de sua Missão Institucional atua</p>
+                        <p>como escritório de negócios, em apoio à Universidade Federal de</p>
+                        <p>Goiás - UFG e outras Instituições Científicas e Tecnológicas - ICTs,</p>
+                        <p>servindo de elo entre a academia e agentes produtivos visando</p>
+                        <p>promover o desenvolvimento científico e tecnológico do país.</p>
+                        <p>Nos últimos 3 anos 2445 projetos foram captados e executados.</p>
+
+                    </div>
+                        
+                 </p>
+
+                 
+
+                 <div class="vejaMais">
+                    <a href="vejaMais">VEJA MAIS</a>
+                 </div>
+
+                </div>
+
+                    <div class="imagem">
+                       
+                    </div>
+
+            </div>
+        
+                   
+        
+                        
+
+
+
+        <!--=================== FIM SOBRE A PÁGINA ======================================================-->
+
+        <!--================== PARTE LARANJA ==================================================================-->
+            <div class="parteLaranja">
+               
+                <div class="text"> <h1>Serviços online FUNAPE</h1></div>
+                
+                <div class="cl">
+                    <div class="caixa1"> <h3>Portal do coordenador</h3>
+                    <p>Ferramenta de relacionamento com o<br>
+                         coordenador para solicitar serviços.</p>
+                    </div>
+
+                    <div class="caixa2"><h3>Portal do fornecedor</h3>
+                    <p>Serviço de interaçaõ fornecedor e o setor de <br>
+                    compras da FUNAPE.</p>
+                    </div>
+
+                    <div class="caixa3"><h3>Portal de eventos</h3>
+                    <p>Agenda de eventos disponíveis para inscrição e <br>
+                    emissão de boletos.</p>
+                    </div>
+
+                </div>
+                
+               
+
+            </div>
+        <!--============= FIM PARTE LARANJA ==================================================================-->
+
+        <!--================== RODAPE ================================================================-->
+
+        <div class="rodape">
+
+            <div class="formulario">
+
+                <h3>FUNAPE</h3>
+                
+                <div class="textoRodape">
+                    <p>Avenida Esperança, nº 1533, Quadra Área, Lote Área, </p> <br>
+                        
+                    <p>  Condomínio Parque Tecnológico Samambaia, Edifício </p> <br>
+                       
+                    <p>  FUNAPE, Bairro Área Campus Samambaia - UFG - Goiânia </p> <br> 
+                        
+                    <p> GO - CEP: 74690-612
+                    </p>
+                </div>
+
+
+                <form >
+                    <input class="email" type="text" placeholder="Endereço de Email">
+                    <button class="enviar" type="submit">Enviar </button>
+                    <!--<input class="enviar" type="submit" name="submit" >-->
+               
+                </form>
+
+            </div>
+
+            <div class="caixaRODAPE">
+                <h4>SERVIÇOS</h4>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Institucional">Perguntas e Respostas</a></P>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Compliance">Downloads</a></P>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Controle De Resultados">Contracheques</a></P>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Ouvidoria">Envio de currículo</a></P>
+                
+                
+            </div>
+
+            <div class="caixaRODAPE">
+                <h4>CONTATO</h4>
+                <P style="color: rgb(218, 214, 214);"> Telefone</P>
+                <P style="color: #f75d04; font-weight:lighter;
+                font-size: 20px;"> (62) 3216-7300 </P>
+                <P style="color: rgb(218, 214, 214);">E-mail:</P>
+                <P> <a style="color: #f75d04; font-size: 20px; font-weight:lighter;
+                    text-decoration: none;"
+                    href="contato@funape.org.br">contato@funape.org.br</a></P>
+
+            </div>
+
+            <div class="caixaRODAPE">
+                <h4>LINKS</h4>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Institucional">Institucional</a></P>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Compliance">Compliance</a></P>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Controle De Resultados">Controle De Resultados</a></P>
+                <P><a style="color: rgb(218, 214, 214); text-decoration: none;" href="Ouvidoria">Ouvidoria</a></P>
+
+            </div>
+
+        </div>
+
+         <!--================= FIM RODAPE ================================================================-->
+
+
+
+</body>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000);
+    }
+</script>
+</html>
